@@ -2,6 +2,7 @@
 {
     --cmp-Paleblue: hsl(225, 100%, 94%);
     --cmp-Brightblue: hsl(245, 75%, 52%);
+    --cmp-BrightBlueLighter: hsl(245, 83%, 68%);
     --cmp-Verypaleblue: hsl(225, 100%, 98%);
     --cmp-Desaturatedblue: hsl(224, 23%, 55%);
     --cmp-Darkblue: hsl(223, 47%, 23%);
@@ -19,6 +20,9 @@ body
     justify-content: center;
     padding: 0 6.4%;
     background-color: var(--cmp-Paleblue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 * {
@@ -30,6 +34,13 @@ body
 }
 * :last-child {
     margin-bottom: 0;
+}
+
+@media (min-width: 768px)
+{
+   body {
+        background-image: url(./images/pattern-background-desktop.svg);
+   }
 }
 
 /* Tyopgraphy */
@@ -44,6 +55,7 @@ html {
     line-height: 1.625;
     color: var(--cmp-Desaturatedblue);
     font-weight: 500;
+    text-align: center;
 }
 
 .cmp h1 
@@ -64,6 +76,9 @@ html {
     font-size: .93rem;
 }
 
+.cmp__plan {
+    text-align: left;
+}
 
 .cmp__plan-change
 {
@@ -107,4 +122,75 @@ html {
     .cmp__btn {
         font-size: .9375rem;
     }
+}
+
+
+/* Layout */
+
+.cmp {
+    background-color: var(--cmp-White);
+    border-radius: 20px;
+    max-width: 450px;
+}
+
+.cmp__img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cmp__content {
+    padding: 2.13em 1.6em;
+}
+
+.cmp__plan {
+    display: flex;
+    align-items: center;
+    gap:1.33em;
+    background-color: var(--cmp-Verypaleblue);
+    border-radius: 11px;
+    padding:1.06em;
+    margin-bottom: 1.6em;
+}
+
+.cmp__plan-title {
+    margin-bottom: 0;
+}
+
+.cmp__plan-price {
+    margin-top: 0;
+}
+
+.cmp__plan-change {
+    margin-left: auto;
+}
+
+.cmp__footer 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+}
+
+.cmp__btn {
+    border-radius: 11px;
+    border:none;
+    background: transparent;
+    transition: color 300ms, background-color 300ms;
+    cursor: pointer;
+}
+
+
+.cmp__btn--blue {
+    padding: 1em;
+    background-color: var(--cmp-Brightblue);
+}
+
+.cmp__btn--blue:hover {
+    background-color: var(--cmp-BrightBlueLighter);
+}
+
+.cmp__btn--white:hover {
+    color: var(--cmp-Darkblue);
 }
