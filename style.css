@@ -1,0 +1,32 @@
+:root 
+{
+    --cmp-Paleblue: hsl(225, 100%, 94%);
+    --cmp-Brightblue: hsl(245, 75%, 52%);
+    --cmp-Verypaleblue: hsl(225, 100%, 98%);
+    --cmp-Desaturatedblue: hsl(224, 23%, 55%);
+    --cmp-Darkblue: hsl(223, 47%, 23%);
+}
+
+
+body 
+{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6.4%;
+    background-color: var(--cmp-Paleblue);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+* :last-child {
+    margin-bottom: 0;
+}
