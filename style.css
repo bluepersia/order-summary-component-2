@@ -5,6 +5,7 @@
     --cmp-Verypaleblue: hsl(225, 100%, 98%);
     --cmp-Desaturatedblue: hsl(224, 23%, 55%);
     --cmp-Darkblue: hsl(223, 47%, 23%);
+    --cmp-White: white;
 }
 
 
@@ -29,4 +30,51 @@ body
 }
 * :last-child {
     margin-bottom: 0;
+}
+
+/* Tyopgraphy */
+
+html {
+    font-size: 15px;
+}
+
+.cmp 
+{
+    font-family: "Red Hat Display", sans-serif;
+    line-height: 1.625;
+    color: var(--cmp-Desaturatedblue);
+    font-weight: 500;
+}
+
+.cmp h1 
+{
+    font-size: 1.46rem;
+    font-weight: 900;
+    color: var(--cmp-Darkblue);
+}
+
+.cmp h3
+{
+    color: var(--cmp-Darkblue);
+    font-weight: 900;
+}
+
+
+.cmp__price-change 
+{
+    color: var(--cmp-Brightblue);
+    font-weight: 700;
+}
+
+.cmp__btn {
+    font-weight: 900;
+}
+
+.cmp__btn--blue {
+    color: var(--cmp-White);
+}
+
+.cmp__btn--white 
+{
+    color: inherit;
 }
