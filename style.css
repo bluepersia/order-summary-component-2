@@ -59,11 +59,17 @@ html {
     font-weight: 900;
 }
 
+.cmp h3, .cmp__plan-price 
+{
+    font-size: .93rem;
+}
 
-.cmp__price-change 
+
+.cmp__plan-change
 {
     color: var(--cmp-Brightblue);
     font-weight: 700;
+    font-size: .86rem;
 }
 
 .cmp__btn {
@@ -77,4 +83,28 @@ html {
 .cmp__btn--white 
 {
     color: inherit;
+}
+
+
+@media (min-width: 768px)
+{
+    html {
+        font-size: 16px;
+    }
+    .cmp h1 
+    {
+        font-size: 1.75rem;
+    }
+
+    .cmp h3, .cmp__plan-price {
+        font-size: 1rem;
+    }
+   
+    .cmp__plan-change {
+        font-size: .875rem;
+    }
+    
+    .cmp__btn {
+        font-size: .9375rem;
+    }
 }
